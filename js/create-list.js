@@ -27,12 +27,12 @@ const makeList = ingredients => {
     itemEl.classList.add('item');
     itemEl.textContent = item;
 
-    return itemEl;
+    return itemEl; 
     });
 };
 
-const list = makeList(ingredients);
-listEl.append(...list)
+const items = makeList(ingredients);
+listEl.append(...items)
 console.log(listEl);
 
 
