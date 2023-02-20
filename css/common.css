@@ -33,3 +33,8 @@ button {
   width: 30%;
 
 }
+
+.tempDiv {
+  display: block;
+  margin: 5px;
+}

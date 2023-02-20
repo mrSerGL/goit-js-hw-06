@@ -24,7 +24,6 @@
 } */
 
 
-
 const inputRef = document.querySelector("#validation-input");
 const appropriateNumber = inputRef.dataset.length;
 
