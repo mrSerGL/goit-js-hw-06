@@ -62,7 +62,7 @@ function destroyBoxes() {
       div.remove();
     }
   }
-
+  inputFieldRef.value = "";
   console.log(divsBox);
 }
 

@@ -19,4 +19,4 @@ const changeFontSize = () => {
 
 };
 
-inputRangeRef.addEventListener("change", changeFontSize);
+inputRangeRef.addEventListener("input", changeFontSize);

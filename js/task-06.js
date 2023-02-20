@@ -25,15 +25,18 @@
 
 
 const inputRef = document.querySelector("#validation-input");
-const appropriateNumber = inputRef.dataset.length;
 
-const inputValidation = () => {
-  if (inputRef.value.length < appropriateNumber) {
-    inputRef.classList.add("invalid");
+inputRef.addEventListener("blur", (event) => {
+  console.log(event.currentTarget.value.length);
+  console.log(Number(event.currentTarget.dataset.length));
+
+  if (event.currentTarget.value.length === Number(inputRef.dataset.length)) {
+    event.currentTarget.classList.add("valid");
+    event.currentTarget.classList.remove("invalid");
+ 
+    
   } else {
-    inputRef.classList.remove("invalid");
-    inputRef.classList.add("valid");
+    event.currentTarget.classList.remove("valid");
+    event.currentTarget.classList.add("invalid");
   }
-};
-
-inputRef.addEventListener("blur", inputValidation);
+});
